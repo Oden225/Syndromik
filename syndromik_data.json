@@ -1,0 +1,2442 @@
+{
+  "meta": {
+    "version": "0.6",
+    "projet": "Syndromik",
+    "contexte": "Côte d'Ivoire / Afrique subsaharienne",
+    "noyau": "Infectiologie + Pédiatrie (approfondie)",
+    "note": "Infectiologie étendue : noyau fébrile + grandes endémies et maladies tropicales négligées.",
+    "convention_id": "prefixe_ + nom sans accent ni espace (sig_, syn_, pat_, spe_)"
+  },
+  "signes": [
+    {
+      "id": "sig_fievre",
+      "nom": "Fièvre",
+      "synonymes": [
+        "hyperthermie",
+        "corps chaud",
+        "chaleur"
+      ],
+      "description": "Élévation de la température du corps au-dessus de 38 °C."
+    },
+    {
+      "id": "sig_frissons",
+      "nom": "Frissons",
+      "synonymes": [
+        "tremblements de froid"
+      ],
+      "description": "Sensation de froid avec tremblements, souvent juste avant une montée de fièvre."
+    },
+    {
+      "id": "sig_sueurs",
+      "nom": "Sueurs profuses",
+      "synonymes": [
+        "transpiration",
+        "suées"
+      ],
+      "description": "Transpiration abondante, fréquente lors de la chute de la fièvre."
+    },
+    {
+      "id": "sig_cephalees",
+      "nom": "Céphalées",
+      "synonymes": [
+        "maux de tête",
+        "mal de tête"
+      ],
+      "description": "Douleurs de la tête."
+    },
+    {
+      "id": "sig_raideur_nuque",
+      "nom": "Raideur de nuque",
+      "synonymes": [
+        "nuque raide"
+      ],
+      "description": "Difficulté douloureuse à fléchir le cou ; signe d'irritation des méninges."
+    },
+    {
+      "id": "sig_photophobie",
+      "nom": "Photophobie",
+      "synonymes": [
+        "gêne à la lumière"
+      ],
+      "description": "Inconfort ou douleur provoqués par la lumière."
+    },
+    {
+      "id": "sig_vomissements",
+      "nom": "Vomissements",
+      "synonymes": [
+        "rejets"
+      ],
+      "description": "Rejet du contenu de l'estomac par la bouche."
+    },
+    {
+      "id": "sig_troubles_conscience",
+      "nom": "Troubles de la conscience",
+      "synonymes": [
+        "confusion",
+        "somnolence",
+        "coma"
+      ],
+      "description": "Altération de la vigilance : somnolence, confusion, jusqu'au coma."
+    },
+    {
+      "id": "sig_convulsions",
+      "nom": "Convulsions",
+      "synonymes": [
+        "crises"
+      ],
+      "description": "Contractions musculaires involontaires, souvent avec perte de connaissance."
+    },
+    {
+      "id": "sig_paleur",
+      "nom": "Pâleur",
+      "synonymes": [
+        "décoloration"
+      ],
+      "description": "Coloration blanche de la peau et des muqueuses, évoquant une anémie."
+    },
+    {
+      "id": "sig_ictere",
+      "nom": "Ictère",
+      "synonymes": [
+        "jaunisse",
+        "yeux jaunes"
+      ],
+      "description": "Coloration jaune de la peau et du blanc des yeux."
+    },
+    {
+      "id": "sig_splenomegalie",
+      "nom": "Splénomégalie",
+      "synonymes": [
+        "grosse rate"
+      ],
+      "description": "Augmentation du volume de la rate, palpable sous les côtes gauches."
+    },
+    {
+      "id": "sig_arthralgies",
+      "nom": "Arthralgies",
+      "synonymes": [
+        "douleurs articulaires"
+      ],
+      "description": "Douleurs au niveau des articulations."
+    },
+    {
+      "id": "sig_myalgies",
+      "nom": "Myalgies",
+      "synonymes": [
+        "courbatures",
+        "douleurs musculaires"
+      ],
+      "description": "Douleurs des muscles."
+    },
+    {
+      "id": "sig_eruption",
+      "nom": "Éruption cutanée",
+      "synonymes": [
+        "boutons",
+        "rash",
+        "taches"
+      ],
+      "description": "Apparition de taches, rougeurs ou boutons sur la peau."
+    },
+    {
+      "id": "sig_saignements",
+      "nom": "Saignements",
+      "synonymes": [
+        "hémorragies",
+        "saignement du nez",
+        "saignement des gencives"
+      ],
+      "description": "Écoulement de sang : nez, gencives, peau (pétéchies) ou digestif."
+    },
+    {
+      "id": "sig_douleur_abdo",
+      "nom": "Douleur abdominale",
+      "synonymes": [
+        "mal au ventre"
+      ],
+      "description": "Douleur au niveau du ventre."
+    },
+    {
+      "id": "sig_diarrhee",
+      "nom": "Diarrhée",
+      "synonymes": [
+        "selles liquides"
+      ],
+      "description": "Selles liquides et fréquentes."
+    },
+    {
+      "id": "sig_asthenie",
+      "nom": "Asthénie",
+      "synonymes": [
+        "fatigue",
+        "faiblesse"
+      ],
+      "description": "Fatigue générale intense."
+    },
+    {
+      "id": "sig_toux",
+      "nom": "Toux",
+      "synonymes": [
+        "toux sèche",
+        "toux grasse"
+      ],
+      "description": "Expulsion d'air bruyante, parfois avec crachats."
+    },
+    {
+      "id": "sig_hemoptysie",
+      "nom": "Hémoptysie",
+      "synonymes": [
+        "crachats de sang"
+      ],
+      "description": "Crachats contenant du sang."
+    },
+    {
+      "id": "sig_amaigrissement",
+      "nom": "Amaigrissement",
+      "synonymes": [
+        "perte de poids",
+        "maigreur"
+      ],
+      "description": "Perte de poids involontaire."
+    },
+    {
+      "id": "sig_sueurs_nocturnes",
+      "nom": "Sueurs nocturnes",
+      "synonymes": [
+        "transpiration la nuit"
+      ],
+      "description": "Transpiration abondante pendant la nuit."
+    },
+    {
+      "id": "sig_anorexie",
+      "nom": "Anorexie",
+      "synonymes": [
+        "perte d'appétit"
+      ],
+      "description": "Perte de l'appétit."
+    },
+    {
+      "id": "sig_adenopathies",
+      "nom": "Adénopathies",
+      "synonymes": [
+        "ganglions gonflés",
+        "ganglions"
+      ],
+      "description": "Ganglions augmentés de volume (cou, aisselles, aine)."
+    },
+    {
+      "id": "sig_ulcere_cutane",
+      "nom": "Ulcère cutané",
+      "synonymes": [
+        "plaie",
+        "ulcère de peau"
+      ],
+      "description": "Perte de substance de la peau formant une plaie creusante."
+    },
+    {
+      "id": "sig_nodule",
+      "nom": "Nodule sous-cutané",
+      "synonymes": [
+        "boule sous la peau"
+      ],
+      "description": "Boule ferme sous la peau."
+    },
+    {
+      "id": "sig_prurit",
+      "nom": "Prurit",
+      "synonymes": [
+        "démangeaisons",
+        "grattage"
+      ],
+      "description": "Démangeaisons de la peau."
+    },
+    {
+      "id": "sig_baisse_vue",
+      "nom": "Baisse de la vue",
+      "synonymes": [
+        "cécité",
+        "perte de vision"
+      ],
+      "description": "Diminution de la vision, pouvant aller jusqu'à la cécité."
+    },
+    {
+      "id": "sig_lymphoedeme",
+      "nom": "Lymphœdème",
+      "synonymes": [
+        "gros membre",
+        "éléphantiasis"
+      ],
+      "description": "Gonflement d'un membre par accumulation de lymphe."
+    },
+    {
+      "id": "sig_hematurie",
+      "nom": "Hématurie",
+      "synonymes": [
+        "sang dans les urines",
+        "urines rouges"
+      ],
+      "description": "Présence de sang dans les urines."
+    },
+    {
+      "id": "sig_taches_cutanees",
+      "nom": "Taches cutanées",
+      "synonymes": [
+        "macules",
+        "taches sur la peau"
+      ],
+      "description": "Taches anormales sur la peau, claires ou colorées."
+    },
+    {
+      "id": "sig_hypoesthesie",
+      "nom": "Perte de sensibilité",
+      "synonymes": [
+        "insensibilité",
+        "engourdissement"
+      ],
+      "description": "Diminution ou perte de la sensibilité de la peau."
+    },
+    {
+      "id": "sig_trismus",
+      "nom": "Trismus",
+      "synonymes": [
+        "mâchoire bloquée"
+      ],
+      "description": "Blocage douloureux de l'ouverture de la mâchoire."
+    },
+    {
+      "id": "sig_contractures",
+      "nom": "Contractures musculaires",
+      "synonymes": [
+        "spasmes",
+        "raideur musculaire"
+      ],
+      "description": "Raideur et contractions musculaires soutenues."
+    },
+    {
+      "id": "sig_hydrophobie",
+      "nom": "Hydrophobie",
+      "synonymes": [
+        "peur de l'eau"
+      ],
+      "description": "Impossibilité de boire, la vue de l'eau déclenchant des spasmes."
+    },
+    {
+      "id": "sig_troubles_sommeil",
+      "nom": "Troubles du sommeil",
+      "synonymes": [
+        "insomnie",
+        "somnolence diurne"
+      ],
+      "description": "Rythme veille/sommeil perturbé, somnolence dans la journée."
+    },
+    {
+      "id": "sig_troubles_comportement",
+      "nom": "Troubles du comportement",
+      "synonymes": [
+        "agitation",
+        "agressivité"
+      ],
+      "description": "Agitation, agressivité ou changement inhabituel du comportement."
+    },
+    {
+      "id": "sig_soif",
+      "nom": "Soif intense",
+      "synonymes": [
+        "polydipsie"
+      ],
+      "description": "Besoin intense et permanent de boire."
+    },
+    {
+      "id": "sig_pli_cutane",
+      "nom": "Pli cutané persistant",
+      "synonymes": [
+        "pli de déshydratation"
+      ],
+      "description": "La peau pincée reste plissée ; signe de déshydratation."
+    },
+    {
+      "id": "sig_conjonctivite",
+      "nom": "Œil rouge",
+      "synonymes": [
+        "conjonctivite",
+        "yeux rouges"
+      ],
+      "description": "Yeux rouges et larmoyants."
+    },
+    {
+      "id": "sig_hepatomegalie",
+      "nom": "Hépatomégalie",
+      "synonymes": [
+        "gros foie"
+      ],
+      "description": "Augmentation du volume du foie, palpable sous les côtes droites."
+    },
+    {
+      "id": "sig_dyspnee",
+      "nom": "Dyspnée",
+      "synonymes": [
+        "essoufflement",
+        "difficulté à respirer"
+      ],
+      "description": "Difficulté à respirer, essoufflement."
+    },
+    {
+      "id": "sig_ulceration_genitale",
+      "nom": "Ulcération génitale",
+      "synonymes": [
+        "chancre",
+        "plaie génitale"
+      ],
+      "description": "Plaie ou ulcération sur les organes génitaux."
+    },
+    {
+      "id": "sig_ecoulement_genital",
+      "nom": "Écoulement génital",
+      "synonymes": [
+        "pertes",
+        "écoulement urétral"
+      ],
+      "description": "Écoulement anormal au niveau des organes génitaux."
+    },
+    {
+      "id": "sig_brulures_miction",
+      "nom": "Brûlures mictionnelles",
+      "synonymes": [
+        "dysurie",
+        "brûlures en urinant"
+      ],
+      "description": "Sensation de brûlure en urinant."
+    },
+    {
+      "id": "sig_oedemes",
+      "nom": "Œdèmes",
+      "synonymes": [
+        "gonflement",
+        "enflure"
+      ],
+      "description": "Gonflement des membres ou du visage, par exemple dans le kwashiorkor."
+    },
+    {
+      "id": "sig_retard_croissance",
+      "nom": "Retard de croissance",
+      "synonymes": [
+        "retard staturo-pondéral",
+        "petite taille"
+      ],
+      "description": "Poids et/ou taille insuffisants pour l'âge."
+    },
+    {
+      "id": "sig_paralysie",
+      "nom": "Paralysie",
+      "synonymes": [
+        "faiblesse d'un membre",
+        "déficit moteur"
+      ],
+      "description": "Perte de la force ou du mouvement d'un membre."
+    },
+    {
+      "id": "sig_otalgie",
+      "nom": "Otalgie",
+      "synonymes": [
+        "douleur d'oreille",
+        "mal d'oreille"
+      ],
+      "description": "Douleur de l'oreille."
+    },
+    {
+      "id": "sig_refus_teter",
+      "nom": "Refus de téter",
+      "synonymes": [
+        "difficulté à s'alimenter",
+        "ne tète plus"
+      ],
+      "description": "Le nourrisson ne tète plus ou s'alimente difficilement ; signe d'alerte."
+    },
+    {
+      "id": "sig_sifflement",
+      "nom": "Sifflement respiratoire",
+      "synonymes": [
+        "wheezing",
+        "respiration sifflante"
+      ],
+      "description": "Bruit sifflant entendu à la respiration."
+    },
+    {
+      "id": "sig_polypnee",
+      "nom": "Respiration rapide",
+      "synonymes": [
+        "polypnée",
+        "tachypnée"
+      ],
+      "description": "Fréquence respiratoire augmentée ; signe d'alerte de pneumonie chez l'enfant."
+    },
+    {
+      "id": "sig_hypothermie",
+      "nom": "Hypothermie",
+      "synonymes": [
+        "température basse",
+        "corps froid"
+      ],
+      "description": "Température du corps anormalement basse ; signe de gravité chez le nouveau-né."
+    },
+    {
+      "id": "sig_angine",
+      "nom": "Mal de gorge",
+      "synonymes": [
+        "angine",
+        "douleur de gorge"
+      ],
+      "description": "Douleur de la gorge, en particulier à la déglutition."
+    },
+    {
+      "id": "sig_tumefaction_parotide",
+      "nom": "Gonflement des joues",
+      "synonymes": [
+        "parotidite",
+        "joues gonflées"
+      ],
+      "description": "Gonflement douloureux des glandes salivaires (parotides), devant les oreilles."
+    },
+    {
+      "id": "sig_croutes",
+      "nom": "Croûtes cutanées",
+      "synonymes": [
+        "lésions croûteuses"
+      ],
+      "description": "Lésions de la peau recouvertes de croûtes (par exemple couleur miel dans l'impétigo)."
+    },
+    {
+      "id": "sig_dysphonie",
+      "nom": "Voix rauque",
+      "synonymes": [
+        "enrouement",
+        "dysphonie"
+      ],
+      "description": "Modification de la voix, qui devient rauque ou éteinte."
+    },
+    {
+      "id": "sig_stridor",
+      "nom": "Stridor",
+      "synonymes": [
+        "bruit respiratoire aigu"
+      ],
+      "description": "Bruit rauque à la respiration, signe d'un rétrécissement des voies aériennes hautes."
+    }
+  ],
+  "syndromes": [
+    {
+      "id": "syn_febrile",
+      "nom": "Syndrome fébrile",
+      "synonymes": [
+        "état fébrile",
+        "fièvre isolée"
+      ],
+      "description": "Association de fièvre et de signes généraux (frissons, sueurs, fatigue, maux de tête)."
+    },
+    {
+      "id": "syn_algique",
+      "nom": "Syndrome algique diffus",
+      "synonymes": [
+        "syndrome pseudo-grippal",
+        "courbatures fébriles"
+      ],
+      "description": "Douleurs articulaires et musculaires diffuses accompagnant la fièvre."
+    },
+    {
+      "id": "syn_meninge",
+      "nom": "Syndrome méningé",
+      "synonymes": [
+        "irritation méningée"
+      ],
+      "description": "Ensemble évoquant une atteinte des méninges : maux de tête, raideur de nuque, gêne à la lumière, vomissements."
+    },
+    {
+      "id": "syn_neuro_febrile",
+      "nom": "Syndrome neurologique fébrile",
+      "synonymes": [
+        "atteinte neurologique fébrile"
+      ],
+      "description": "Atteinte du cerveau avec fièvre : troubles de la conscience et/ou convulsions. Signe de gravité."
+    },
+    {
+      "id": "syn_anemique",
+      "nom": "Syndrome anémique",
+      "synonymes": [
+        "anémie"
+      ],
+      "description": "Signes d'un manque de globules rouges : pâleur, fatigue, essoufflement."
+    },
+    {
+      "id": "syn_ictere",
+      "nom": "Syndrome ictérique",
+      "synonymes": [
+        "jaunisse"
+      ],
+      "description": "Coloration jaune de la peau et des yeux, traduisant une atteinte du foie ou une destruction des globules rouges."
+    },
+    {
+      "id": "syn_hemorragique",
+      "nom": "Syndrome hémorragique",
+      "synonymes": [
+        "saignements multiples"
+      ],
+      "description": "Tendance anormale aux saignements et aux taches de sang sous la peau."
+    },
+    {
+      "id": "syn_digestif",
+      "nom": "Syndrome digestif fébrile",
+      "synonymes": [
+        "troubles digestifs fébriles"
+      ],
+      "description": "Fièvre associée à des troubles digestifs : douleur au ventre, diarrhée, vomissements."
+    },
+    {
+      "id": "syn_respiratoire_chronique",
+      "nom": "Syndrome respiratoire chronique",
+      "synonymes": [
+        "toux chronique"
+      ],
+      "description": "Toux qui dure (plus de 2 à 3 semaines), parfois avec crachats de sang et amaigrissement."
+    },
+    {
+      "id": "syn_aeg",
+      "nom": "Syndrome d'altération de l'état général",
+      "synonymes": [
+        "AEG"
+      ],
+      "description": "Amaigrissement, fatigue, perte d'appétit et sueurs nocturnes."
+    },
+    {
+      "id": "syn_immunodepression",
+      "nom": "Syndrome d'immunodépression",
+      "synonymes": [
+        "baisse des défenses"
+      ],
+      "description": "Baisse des défenses de l'organisme : infections à répétition, diarrhée qui traîne, amaigrissement."
+    },
+    {
+      "id": "syn_cutane_ulcereux",
+      "nom": "Syndrome cutané ulcéreux",
+      "synonymes": [
+        "lésion cutanée creusante"
+      ],
+      "description": "Lésion de la peau évoluant d'un nodule vers un ulcère creusant."
+    },
+    {
+      "id": "syn_eruptif_febrile",
+      "nom": "Syndrome éruptif fébrile",
+      "synonymes": [
+        "fièvre éruptive"
+      ],
+      "description": "Fièvre accompagnée d'une éruption sur la peau, souvent avec toux et yeux rouges."
+    },
+    {
+      "id": "syn_deshydratation",
+      "nom": "Syndrome de déshydratation",
+      "synonymes": [
+        "déshydratation"
+      ],
+      "description": "Perte importante d'eau : diarrhée abondante, soif intense, pli de la peau qui persiste."
+    },
+    {
+      "id": "syn_cutaneo_nerveux",
+      "nom": "Syndrome cutanéo-nerveux",
+      "synonymes": [
+        "atteinte cutanée et nerveuse"
+      ],
+      "description": "Taches de peau ayant perdu la sensibilité, avec atteinte des nerfs."
+    },
+    {
+      "id": "syn_prurigineux",
+      "nom": "Syndrome cutané prurigineux",
+      "synonymes": [
+        "démangeaisons chroniques"
+      ],
+      "description": "Démangeaisons intenses de la peau, parfois avec des nodules sous la peau."
+    },
+    {
+      "id": "syn_oculaire",
+      "nom": "Syndrome oculaire",
+      "synonymes": [
+        "atteinte oculaire"
+      ],
+      "description": "Atteinte des yeux avec baisse de la vue pouvant aller jusqu'à la cécité."
+    },
+    {
+      "id": "syn_lymphatique",
+      "nom": "Syndrome lymphatique",
+      "synonymes": [
+        "atteinte lymphatique"
+      ],
+      "description": "Gonflement d'un membre (lymphœdème) et/ou ganglions augmentés de volume."
+    },
+    {
+      "id": "syn_urinaire",
+      "nom": "Syndrome urinaire",
+      "synonymes": [
+        "signes urinaires"
+      ],
+      "description": "Signes urinaires, en particulier du sang dans les urines."
+    },
+    {
+      "id": "syn_spasmes",
+      "nom": "Syndrome de spasmes musculaires",
+      "synonymes": [
+        "contractures généralisées"
+      ],
+      "description": "Contractures et spasmes musculaires, blocage de la mâchoire (trismus)."
+    },
+    {
+      "id": "syn_neuro_comportemental",
+      "nom": "Syndrome neuro-comportemental",
+      "synonymes": [
+        "troubles neuropsychiques"
+      ],
+      "description": "Troubles du sommeil, du comportement et de la conscience."
+    },
+    {
+      "id": "syn_respiratoire_aigu",
+      "nom": "Syndrome respiratoire aigu",
+      "synonymes": [
+        "détresse respiratoire",
+        "infection respiratoire aiguë"
+      ],
+      "description": "Fièvre avec toux et difficulté à respirer d'installation rapide."
+    },
+    {
+      "id": "syn_ist",
+      "nom": "Syndrome d'IST (uro-génital)",
+      "synonymes": [
+        "infection sexuellement transmissible"
+      ],
+      "description": "Ulcération ou écoulement au niveau génital, parfois brûlures en urinant."
+    },
+    {
+      "id": "syn_malnutrition",
+      "nom": "Syndrome de malnutrition",
+      "synonymes": [
+        "dénutrition"
+      ],
+      "description": "Amaigrissement, retard de croissance et parfois œdèmes, avec perte d'appétit."
+    },
+    {
+      "id": "syn_paralysie",
+      "nom": "Syndrome de paralysie flasque",
+      "synonymes": [
+        "paralysie aiguë"
+      ],
+      "description": "Faiblesse ou paralysie molle d'un membre, d'installation récente."
+    },
+    {
+      "id": "syn_orl_douloureux",
+      "nom": "Syndrome ORL douloureux",
+      "synonymes": [
+        "douleur oreille-gorge"
+      ],
+      "description": "Douleur de l'oreille ou de la gorge, souvent accompagnée de fièvre."
+    },
+    {
+      "id": "syn_souffrance_neonatale",
+      "nom": "Syndrome de souffrance du nouveau-né",
+      "synonymes": [
+        "détresse néonatale"
+      ],
+      "description": "Signes d'alerte chez le nouveau-né : refus de téter, léthargie, difficulté à respirer."
+    },
+    {
+      "id": "syn_parotidien",
+      "nom": "Syndrome parotidien",
+      "synonymes": [
+        "parotidite"
+      ],
+      "description": "Gonflement douloureux des joues (glandes parotides), souvent avec fièvre."
+    },
+    {
+      "id": "syn_dermatose_localisee",
+      "nom": "Syndrome de dermatose localisée",
+      "synonymes": [
+        "lésion cutanée localisée"
+      ],
+      "description": "Lésions de peau localisées : rougeurs, croûtes et démangeaisons."
+    },
+    {
+      "id": "syn_larynge",
+      "nom": "Syndrome laryngé",
+      "synonymes": [
+        "obstruction respiratoire haute"
+      ],
+      "description": "Voix rauque, toux aboyante et parfois bruit respiratoire (stridor) par atteinte du larynx."
+    }
+  ],
+  "pathologies": [
+    {
+      "id": "pat_paludisme",
+      "nom": "Paludisme",
+      "synonymes": [
+        "palu",
+        "malaria"
+      ],
+      "urgence": "elevee",
+      "description": "Infection parasitaire transmise par le moustique Anophèle. Première cause de fièvre et de consultation en Côte d'Ivoire. La forme grave (neuropaludisme, anémie sévère) est une urgence."
+    },
+    {
+      "id": "pat_typhoide",
+      "nom": "Fièvre typhoïde",
+      "synonymes": [
+        "typhoïde",
+        "salmonellose typhique"
+      ],
+      "urgence": "moderee",
+      "description": "Infection bactérienne (Salmonella Typhi) liée à l'eau et aux aliments souillés, fréquente là où l'hygiène est précaire."
+    },
+    {
+      "id": "pat_dengue",
+      "nom": "Dengue",
+      "synonymes": [
+        "fièvre de la dengue"
+      ],
+      "urgence": "moderee",
+      "description": "Maladie virale transmise par le moustique Aedes. Épidémies périodiques en Côte d'Ivoire ; la forme sévère est hémorragique."
+    },
+    {
+      "id": "pat_meningite",
+      "nom": "Méningite bactérienne",
+      "synonymes": [
+        "méningite"
+      ],
+      "urgence": "vitale",
+      "description": "Infection des enveloppes du cerveau. Urgence vitale : traitement immédiat. La Côte d'Ivoire est en bordure de la « ceinture de la méningite »."
+    },
+    {
+      "id": "pat_fievre_jaune",
+      "nom": "Fièvre jaune",
+      "synonymes": [
+        "vomito negro"
+      ],
+      "urgence": "elevee",
+      "description": "Maladie virale grave transmise par le moustique Aedes, avec risque d'atteinte du foie et d'hémorragies. Vaccin obligatoire pour entrer dans le pays."
+    },
+    {
+      "id": "pat_chikungunya",
+      "nom": "Chikungunya",
+      "synonymes": [
+        "chik"
+      ],
+      "urgence": "faible",
+      "description": "Maladie virale transmise par le moustique Aedes, dominée par des douleurs articulaires intenses et prolongées."
+    },
+    {
+      "id": "pat_tuberculose",
+      "nom": "Tuberculose",
+      "synonymes": [
+        "TB",
+        "BK",
+        "phtisie"
+      ],
+      "urgence": "elevee",
+      "description": "Infection bactérienne (bacille de Koch) touchant surtout les poumons. Une toux de plus de 2-3 semaines avec amaigrissement et sueurs nocturnes doit y faire penser. Programme national dédié (PNLT)."
+    },
+    {
+      "id": "pat_vih",
+      "nom": "Infection à VIH / sida",
+      "synonymes": [
+        "VIH",
+        "sida",
+        "séropositivité"
+      ],
+      "urgence": "elevee",
+      "description": "Virus qui détruit progressivement les défenses immunitaires et expose aux infections opportunistes. Dépistage et traitement antirétroviral encadrés par le PNLS."
+    },
+    {
+      "id": "pat_hepatite_b",
+      "nom": "Hépatite virale B",
+      "synonymes": [
+        "VHB",
+        "hépatite B"
+      ],
+      "urgence": "moderee",
+      "description": "Infection virale du foie très fréquente en Afrique de l'Ouest, pouvant évoluer vers la cirrhose et le cancer du foie. Évitable par la vaccination."
+    },
+    {
+      "id": "pat_cholera",
+      "nom": "Choléra",
+      "synonymes": [
+        "choléra"
+      ],
+      "urgence": "vitale",
+      "description": "Diarrhée aqueuse très abondante d'origine bactérienne (Vibrio cholerae), liée à l'eau souillée. Urgence : la déshydratation peut tuer en quelques heures."
+    },
+    {
+      "id": "pat_rougeole",
+      "nom": "Rougeole",
+      "synonymes": [
+        "rougeole"
+      ],
+      "urgence": "elevee",
+      "description": "Maladie virale très contagieuse de l'enfant : fièvre, éruption et catarrhe. Grave chez le jeune enfant dénutri ; évitable par la vaccination."
+    },
+    {
+      "id": "pat_buruli",
+      "nom": "Ulcère de Buruli",
+      "synonymes": [
+        "Mycobacterium ulcerans"
+      ],
+      "urgence": "moderee",
+      "description": "Infection cutanée donnant un nodule puis un ulcère creusant, généralement indolore. La Côte d'Ivoire est l'un des pays les plus touchés au monde."
+    },
+    {
+      "id": "pat_schistosomiase",
+      "nom": "Schistosomiase (bilharziose)",
+      "synonymes": [
+        "bilharziose",
+        "schisto"
+      ],
+      "urgence": "moderee",
+      "description": "Maladie parasitaire liée aux eaux douces contaminées. La forme urinaire donne du sang dans les urines ; la forme intestinale des troubles digestifs."
+    },
+    {
+      "id": "pat_onchocercose",
+      "nom": "Onchocercose (cécité des rivières)",
+      "synonymes": [
+        "cécité des rivières"
+      ],
+      "urgence": "moderee",
+      "description": "Maladie parasitaire transmise par la simulie, provoquant démangeaisons, nodules et atteinte des yeux pouvant mener à la cécité."
+    },
+    {
+      "id": "pat_filariose",
+      "nom": "Filariose lymphatique",
+      "synonymes": [
+        "éléphantiasis"
+      ],
+      "urgence": "faible",
+      "description": "Maladie parasitaire transmise par les moustiques, qui obstrue les vaisseaux lymphatiques et provoque un gonflement des membres (éléphantiasis)."
+    },
+    {
+      "id": "pat_lepre",
+      "nom": "Lèpre (maladie de Hansen)",
+      "synonymes": [
+        "maladie de Hansen"
+      ],
+      "urgence": "moderee",
+      "description": "Infection bactérienne chronique donnant des taches cutanées insensibles et une atteinte des nerfs. Curable ; un retard de traitement laisse des séquelles."
+    },
+    {
+      "id": "pat_tha",
+      "nom": "Trypanosomiase humaine africaine",
+      "synonymes": [
+        "maladie du sommeil"
+      ],
+      "urgence": "vitale",
+      "description": "Maladie parasitaire transmise par la mouche tsé-tsé, évoluant vers une atteinte du cerveau (troubles du sommeil et du comportement) mortelle sans traitement."
+    },
+    {
+      "id": "pat_rage",
+      "nom": "Rage",
+      "synonymes": [
+        "rage"
+      ],
+      "urgence": "vitale",
+      "description": "Maladie virale transmise par morsure animale (surtout le chien). Une fois les signes déclarés, l'issue est presque toujours fatale : la prévention après morsure est essentielle."
+    },
+    {
+      "id": "pat_tetanos",
+      "nom": "Tétanos",
+      "synonymes": [
+        "tétanos"
+      ],
+      "urgence": "vitale",
+      "description": "Maladie due à une toxine bactérienne pénétrant par une plaie souillée, provoquant contractures et spasmes musculaires. Évitable par la vaccination."
+    },
+    {
+      "id": "pat_amibiase",
+      "nom": "Amibiase",
+      "synonymes": [
+        "amœbose",
+        "dysenterie amibienne"
+      ],
+      "urgence": "moderee",
+      "description": "Infection parasitaire intestinale (Entamoeba histolytica) liée à l'eau et aux aliments souillés. Donne une diarrhée glairo-sanglante, parfois un abcès du foie."
+    },
+    {
+      "id": "pat_covid19",
+      "nom": "COVID-19",
+      "synonymes": [
+        "coronavirus",
+        "SARS-CoV-2"
+      ],
+      "urgence": "moderee",
+      "description": "Maladie virale respiratoire allant du simple rhume à la détresse respiratoire chez les personnes fragiles."
+    },
+    {
+      "id": "pat_grippe",
+      "nom": "Grippe",
+      "synonymes": [
+        "influenza",
+        "syndrome grippal"
+      ],
+      "urgence": "faible",
+      "description": "Maladie virale respiratoire saisonnière : fièvre, courbatures, toux. Bénigne le plus souvent, plus sévère chez le sujet fragile."
+    },
+    {
+      "id": "pat_gale",
+      "nom": "Gale",
+      "synonymes": [
+        "scabiose"
+      ],
+      "urgence": "faible",
+      "description": "Maladie de peau parasitaire très contagieuse, provoquant des démangeaisons intenses surtout la nuit. Fréquente en collectivité."
+    },
+    {
+      "id": "pat_pian",
+      "nom": "Pian",
+      "synonymes": [
+        "tréponématose endémique"
+      ],
+      "urgence": "faible",
+      "description": "Infection bactérienne de la peau et des os de l'enfant (tréponématose), transmise par contact. Maladie tropicale négligée ciblée par l'élimination."
+    },
+    {
+      "id": "pat_trachome",
+      "nom": "Trachome",
+      "synonymes": [
+        "conjonctivite granuleuse"
+      ],
+      "urgence": "moderee",
+      "description": "Infection oculaire bactérienne à répétition, première cause infectieuse de cécité dans le monde. Maladie tropicale négligée."
+    },
+    {
+      "id": "pat_geohelminthiases",
+      "nom": "Géohelminthiases",
+      "synonymes": [
+        "vers intestinaux",
+        "ascaridiose",
+        "ankylostomose"
+      ],
+      "urgence": "faible",
+      "description": "Vers intestinaux transmis par un sol souillé, très fréquents chez l'enfant : troubles digestifs et anémie. Traitement de masse (déparasitage)."
+    },
+    {
+      "id": "pat_loase",
+      "nom": "Loase",
+      "synonymes": [
+        "Loa loa",
+        "ver de l'œil"
+      ],
+      "urgence": "faible",
+      "description": "Filariose des zones forestières transmise par une mouche (chrysops), avec démangeaisons, gonflements fugaces et passage du ver sous la conjonctive."
+    },
+    {
+      "id": "pat_coqueluche",
+      "nom": "Coqueluche",
+      "synonymes": [
+        "toux quinteuse"
+      ],
+      "urgence": "moderee",
+      "description": "Infection respiratoire bactérienne très contagieuse, dangereuse chez le nourrisson (quintes de toux). Évitable par la vaccination."
+    },
+    {
+      "id": "pat_syphilis",
+      "nom": "Syphilis",
+      "synonymes": [
+        "tréponème pâle",
+        "IST"
+      ],
+      "urgence": "moderee",
+      "description": "Infection sexuellement transmissible bactérienne évoluant par étapes : chancre, puis éruption, puis atteintes tardives. Curable par antibiotiques."
+    },
+    {
+      "id": "pat_gonococcie",
+      "nom": "Gonococcie",
+      "synonymes": [
+        "blennorragie",
+        "chaude-pisse",
+        "IST"
+      ],
+      "urgence": "faible",
+      "description": "Infection sexuellement transmissible bactérienne, cause fréquente d'écoulement génital et de brûlures urinaires."
+    },
+    {
+      "id": "pat_lassa",
+      "nom": "Fièvre de Lassa",
+      "synonymes": [
+        "fièvre hémorragique de Lassa"
+      ],
+      "urgence": "vitale",
+      "description": "Fièvre hémorragique virale d'Afrique de l'Ouest, transmise par les rongeurs. Urgence : risque hémorragique et forte contagiosité."
+    },
+    {
+      "id": "pat_mpox",
+      "nom": "Mpox",
+      "synonymes": [
+        "variole simienne",
+        "monkeypox"
+      ],
+      "urgence": "moderee",
+      "description": "Maladie virale émergente donnant fièvre, éruption vésiculo-pustuleuse et ganglions. Transmission par contact rapproché."
+    },
+    {
+      "id": "pat_leptospirose",
+      "nom": "Leptospirose",
+      "synonymes": [
+        "maladie de Weil"
+      ],
+      "urgence": "moderee",
+      "description": "Infection bactérienne transmise par l'eau ou l'urine de rongeurs, associant fièvre, courbatures, ictère et parfois atteinte rénale."
+    },
+    {
+      "id": "pat_malnutrition",
+      "nom": "Malnutrition aiguë sévère",
+      "synonymes": [
+        "marasme",
+        "kwashiorkor",
+        "MAS"
+      ],
+      "urgence": "vitale",
+      "description": "Déficit nutritionnel grave de l'enfant qui affaiblit l'immunité et aggrave les autres maladies. Urgence pédiatrique fréquente en Côte d'Ivoire."
+    },
+    {
+      "id": "pat_gastro_enterite",
+      "nom": "Gastro-entérite aiguë",
+      "synonymes": [
+        "diarrhée aiguë",
+        "rotavirus"
+      ],
+      "urgence": "elevee",
+      "description": "Diarrhée aiguë du nourrisson, souvent virale (rotavirus). Le danger principal est la déshydratation, à prévenir par les SRO."
+    },
+    {
+      "id": "pat_pneumonie",
+      "nom": "Pneumonie de l'enfant",
+      "synonymes": [
+        "infection respiratoire basse",
+        "IRA"
+      ],
+      "urgence": "elevee",
+      "description": "Infection aiguë des poumons, une des premières causes de décès de l'enfant. Signe d'alerte : respiration rapide."
+    },
+    {
+      "id": "pat_bronchiolite",
+      "nom": "Bronchiolite du nourrisson",
+      "synonymes": [
+        "VRS"
+      ],
+      "urgence": "moderee",
+      "description": "Infection virale des petites bronches du nourrisson, avec gêne respiratoire et sifflement."
+    },
+    {
+      "id": "pat_otite",
+      "nom": "Otite moyenne aiguë",
+      "synonymes": [
+        "otite"
+      ],
+      "urgence": "faible",
+      "description": "Infection de l'oreille moyenne, fréquente et douloureuse chez l'enfant, souvent fébrile."
+    },
+    {
+      "id": "pat_sepsis_neonatal",
+      "nom": "Infection néonatale (sepsis)",
+      "synonymes": [
+        "sepsis néonatal",
+        "infection du nouveau-né"
+      ],
+      "urgence": "vitale",
+      "description": "Infection généralisée du nouveau-né. Urgence : signes discrets (refus de téter, léthargie) mais évolution très rapide."
+    },
+    {
+      "id": "pat_ictere_neonatal",
+      "nom": "Ictère néonatal",
+      "synonymes": [
+        "jaunisse du nouveau-né"
+      ],
+      "urgence": "moderee",
+      "description": "Jaunisse du nouveau-né, souvent bénigne mais à surveiller : un ictère intense peut atteindre le cerveau."
+    },
+    {
+      "id": "pat_drepanocytose",
+      "nom": "Drépanocytose",
+      "synonymes": [
+        "anémie SS",
+        "hémoglobinose S"
+      ],
+      "urgence": "elevee",
+      "description": "Maladie génétique de l'hémoglobine très fréquente en Afrique de l'Ouest, responsable d'anémie chronique et de crises douloureuses. Partagée avec l'hématologie."
+    },
+    {
+      "id": "pat_poliomyelite",
+      "nom": "Poliomyélite",
+      "synonymes": [
+        "polio"
+      ],
+      "urgence": "elevee",
+      "description": "Infection virale pouvant provoquer une paralysie définitive d'un membre. Évitable par la vaccination."
+    },
+    {
+      "id": "pat_anemie_enfant",
+      "nom": "Anémie carentielle de l'enfant",
+      "synonymes": [
+        "anémie ferriprive"
+      ],
+      "urgence": "moderee",
+      "description": "Manque de globules rouges par carence (fer), aggravé par le paludisme et les vers. Se traduit par pâleur et fatigue."
+    },
+    {
+      "id": "pat_prematurite",
+      "nom": "Prématurité / faible poids de naissance",
+      "synonymes": [
+        "prématuré",
+        "petit poids"
+      ],
+      "urgence": "vitale",
+      "description": "Naissance avant terme ou petit poids, exposant le nouveau-né aux difficultés respiratoires, à l'hypothermie et aux infections. Première cause de décès néonatal."
+    },
+    {
+      "id": "pat_asphyxie_neonatale",
+      "nom": "Asphyxie néonatale",
+      "synonymes": [
+        "souffrance à la naissance"
+      ],
+      "urgence": "vitale",
+      "description": "Manque d'oxygène autour de la naissance, pouvant laisser des séquelles neurologiques. Urgence de la salle de naissance."
+    },
+    {
+      "id": "pat_tetanos_neonatal",
+      "nom": "Tétanos néonatal",
+      "synonymes": [
+        "tétanos du nouveau-né"
+      ],
+      "urgence": "vitale",
+      "description": "Tétanos du nouveau-né contracté par des soins du cordon non stériles : refus de téter puis spasmes. Évitable par la vaccination de la mère."
+    },
+    {
+      "id": "pat_convulsions_febriles",
+      "nom": "Convulsions fébriles",
+      "synonymes": [
+        "crises fébriles"
+      ],
+      "urgence": "moderee",
+      "description": "Convulsions déclenchées par la fièvre chez le jeune enfant, le plus souvent bénignes mais impressionnantes ; il faut toujours éliminer une méningite."
+    },
+    {
+      "id": "pat_raa",
+      "nom": "Rhumatisme articulaire aigu (RAA)",
+      "synonymes": [
+        "RAA"
+      ],
+      "urgence": "elevee",
+      "description": "Complication d'une angine à streptocoque touchant les articulations et surtout le cœur. Fréquent chez l'enfant en zone tropicale. À partager avec la cardiologie."
+    },
+    {
+      "id": "pat_diphterie",
+      "nom": "Diphtérie",
+      "synonymes": [
+        "angine à fausses membranes"
+      ],
+      "urgence": "elevee",
+      "description": "Infection bactérienne de la gorge formant de fausses membranes pouvant obstruer les voies respiratoires. Évitable par la vaccination."
+    },
+    {
+      "id": "pat_varicelle",
+      "nom": "Varicelle",
+      "synonymes": [
+        "picote"
+      ],
+      "urgence": "faible",
+      "description": "Maladie virale très contagieuse de l'enfant : éruption de vésicules qui démangent, avec fièvre modérée."
+    },
+    {
+      "id": "pat_oreillons",
+      "nom": "Oreillons",
+      "synonymes": [
+        "parotidite ourlienne"
+      ],
+      "urgence": "faible",
+      "description": "Maladie virale donnant un gonflement douloureux des glandes salivaires (joues). Évitable par la vaccination (ROR)."
+    },
+    {
+      "id": "pat_teigne",
+      "nom": "Teigne du cuir chevelu",
+      "synonymes": [
+        "dermatophytose",
+        "dartre"
+      ],
+      "urgence": "faible",
+      "description": "Infection de la peau et des cheveux par un champignon, fréquente chez l'enfant : plaques et démangeaisons du cuir chevelu."
+    },
+    {
+      "id": "pat_impetigo",
+      "nom": "Impétigo",
+      "synonymes": [
+        "impétigo"
+      ],
+      "urgence": "faible",
+      "description": "Infection bactérienne superficielle et très contagieuse de la peau, formant des croûtes couleur miel. Fréquente chez l'enfant."
+    },
+    {
+      "id": "pat_laryngite",
+      "nom": "Laryngite aiguë",
+      "synonymes": [
+        "croup",
+        "laryngite sous-glottique"
+      ],
+      "urgence": "moderee",
+      "description": "Inflammation du larynx, souvent virale ; la forme sous-glottique (croup) de l'enfant donne voix rauque, toux aboyante et parfois gêne respiratoire par rétrécissement des voies aériennes."
+    }
+  ],
+  "specialites": [
+    {
+      "id": "spe_infectiologie",
+      "nom": "Maladies infectieuses (Infectiologie)",
+      "description": "Domaine des maladies causées par des agents infectieux : parasites, bactéries, virus. Spécialité centrale dans le contexte ivoirien."
+    },
+    {
+      "id": "spe_pediatrie",
+      "nom": "Pédiatrie",
+      "description": "Médecine de l'enfant, du nouveau-né à l'adolescent. En Côte d'Ivoire, elle concentre une grande part de la mortalité évitable : paludisme, diarrhées, pneumonies, malnutrition, souffrance néonatale."
+    }
+  ],
+  "liens": {
+    "signe_syndrome": [
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_febrile"
+      },
+      {
+        "signe": "sig_frissons",
+        "syndrome": "syn_febrile"
+      },
+      {
+        "signe": "sig_sueurs",
+        "syndrome": "syn_febrile"
+      },
+      {
+        "signe": "sig_cephalees",
+        "syndrome": "syn_febrile"
+      },
+      {
+        "signe": "sig_asthenie",
+        "syndrome": "syn_febrile"
+      },
+      {
+        "signe": "sig_arthralgies",
+        "syndrome": "syn_algique"
+      },
+      {
+        "signe": "sig_myalgies",
+        "syndrome": "syn_algique"
+      },
+      {
+        "signe": "sig_cephalees",
+        "syndrome": "syn_algique"
+      },
+      {
+        "signe": "sig_cephalees",
+        "syndrome": "syn_meninge"
+      },
+      {
+        "signe": "sig_raideur_nuque",
+        "syndrome": "syn_meninge"
+      },
+      {
+        "signe": "sig_photophobie",
+        "syndrome": "syn_meninge"
+      },
+      {
+        "signe": "sig_vomissements",
+        "syndrome": "syn_meninge"
+      },
+      {
+        "signe": "sig_troubles_conscience",
+        "syndrome": "syn_neuro_febrile"
+      },
+      {
+        "signe": "sig_convulsions",
+        "syndrome": "syn_neuro_febrile"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_neuro_febrile"
+      },
+      {
+        "signe": "sig_paleur",
+        "syndrome": "syn_anemique"
+      },
+      {
+        "signe": "sig_asthenie",
+        "syndrome": "syn_anemique"
+      },
+      {
+        "signe": "sig_splenomegalie",
+        "syndrome": "syn_anemique"
+      },
+      {
+        "signe": "sig_ictere",
+        "syndrome": "syn_ictere"
+      },
+      {
+        "signe": "sig_hepatomegalie",
+        "syndrome": "syn_ictere"
+      },
+      {
+        "signe": "sig_saignements",
+        "syndrome": "syn_hemorragique"
+      },
+      {
+        "signe": "sig_eruption",
+        "syndrome": "syn_hemorragique"
+      },
+      {
+        "signe": "sig_douleur_abdo",
+        "syndrome": "syn_digestif"
+      },
+      {
+        "signe": "sig_diarrhee",
+        "syndrome": "syn_digestif"
+      },
+      {
+        "signe": "sig_vomissements",
+        "syndrome": "syn_digestif"
+      },
+      {
+        "signe": "sig_toux",
+        "syndrome": "syn_respiratoire_chronique"
+      },
+      {
+        "signe": "sig_hemoptysie",
+        "syndrome": "syn_respiratoire_chronique"
+      },
+      {
+        "signe": "sig_amaigrissement",
+        "syndrome": "syn_respiratoire_chronique"
+      },
+      {
+        "signe": "sig_sueurs_nocturnes",
+        "syndrome": "syn_respiratoire_chronique"
+      },
+      {
+        "signe": "sig_amaigrissement",
+        "syndrome": "syn_aeg"
+      },
+      {
+        "signe": "sig_asthenie",
+        "syndrome": "syn_aeg"
+      },
+      {
+        "signe": "sig_anorexie",
+        "syndrome": "syn_aeg"
+      },
+      {
+        "signe": "sig_sueurs_nocturnes",
+        "syndrome": "syn_aeg"
+      },
+      {
+        "signe": "sig_adenopathies",
+        "syndrome": "syn_immunodepression"
+      },
+      {
+        "signe": "sig_diarrhee",
+        "syndrome": "syn_immunodepression"
+      },
+      {
+        "signe": "sig_amaigrissement",
+        "syndrome": "syn_immunodepression"
+      },
+      {
+        "signe": "sig_nodule",
+        "syndrome": "syn_cutane_ulcereux"
+      },
+      {
+        "signe": "sig_ulcere_cutane",
+        "syndrome": "syn_cutane_ulcereux"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_eruptif_febrile"
+      },
+      {
+        "signe": "sig_eruption",
+        "syndrome": "syn_eruptif_febrile"
+      },
+      {
+        "signe": "sig_toux",
+        "syndrome": "syn_eruptif_febrile"
+      },
+      {
+        "signe": "sig_conjonctivite",
+        "syndrome": "syn_eruptif_febrile"
+      },
+      {
+        "signe": "sig_diarrhee",
+        "syndrome": "syn_deshydratation"
+      },
+      {
+        "signe": "sig_soif",
+        "syndrome": "syn_deshydratation"
+      },
+      {
+        "signe": "sig_pli_cutane",
+        "syndrome": "syn_deshydratation"
+      },
+      {
+        "signe": "sig_vomissements",
+        "syndrome": "syn_deshydratation"
+      },
+      {
+        "signe": "sig_taches_cutanees",
+        "syndrome": "syn_cutaneo_nerveux"
+      },
+      {
+        "signe": "sig_hypoesthesie",
+        "syndrome": "syn_cutaneo_nerveux"
+      },
+      {
+        "signe": "sig_nodule",
+        "syndrome": "syn_cutaneo_nerveux"
+      },
+      {
+        "signe": "sig_prurit",
+        "syndrome": "syn_prurigineux"
+      },
+      {
+        "signe": "sig_nodule",
+        "syndrome": "syn_prurigineux"
+      },
+      {
+        "signe": "sig_baisse_vue",
+        "syndrome": "syn_oculaire"
+      },
+      {
+        "signe": "sig_prurit",
+        "syndrome": "syn_oculaire"
+      },
+      {
+        "signe": "sig_lymphoedeme",
+        "syndrome": "syn_lymphatique"
+      },
+      {
+        "signe": "sig_adenopathies",
+        "syndrome": "syn_lymphatique"
+      },
+      {
+        "signe": "sig_hematurie",
+        "syndrome": "syn_urinaire"
+      },
+      {
+        "signe": "sig_douleur_abdo",
+        "syndrome": "syn_urinaire"
+      },
+      {
+        "signe": "sig_trismus",
+        "syndrome": "syn_spasmes"
+      },
+      {
+        "signe": "sig_contractures",
+        "syndrome": "syn_spasmes"
+      },
+      {
+        "signe": "sig_convulsions",
+        "syndrome": "syn_spasmes"
+      },
+      {
+        "signe": "sig_troubles_sommeil",
+        "syndrome": "syn_neuro_comportemental"
+      },
+      {
+        "signe": "sig_troubles_comportement",
+        "syndrome": "syn_neuro_comportemental"
+      },
+      {
+        "signe": "sig_troubles_conscience",
+        "syndrome": "syn_neuro_comportemental"
+      },
+      {
+        "signe": "sig_hydrophobie",
+        "syndrome": "syn_neuro_comportemental"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_respiratoire_aigu"
+      },
+      {
+        "signe": "sig_toux",
+        "syndrome": "syn_respiratoire_aigu"
+      },
+      {
+        "signe": "sig_dyspnee",
+        "syndrome": "syn_respiratoire_aigu"
+      },
+      {
+        "signe": "sig_polypnee",
+        "syndrome": "syn_respiratoire_aigu"
+      },
+      {
+        "signe": "sig_sifflement",
+        "syndrome": "syn_respiratoire_aigu"
+      },
+      {
+        "signe": "sig_ulceration_genitale",
+        "syndrome": "syn_ist"
+      },
+      {
+        "signe": "sig_ecoulement_genital",
+        "syndrome": "syn_ist"
+      },
+      {
+        "signe": "sig_brulures_miction",
+        "syndrome": "syn_ist"
+      },
+      {
+        "signe": "sig_amaigrissement",
+        "syndrome": "syn_malnutrition"
+      },
+      {
+        "signe": "sig_oedemes",
+        "syndrome": "syn_malnutrition"
+      },
+      {
+        "signe": "sig_retard_croissance",
+        "syndrome": "syn_malnutrition"
+      },
+      {
+        "signe": "sig_anorexie",
+        "syndrome": "syn_malnutrition"
+      },
+      {
+        "signe": "sig_paralysie",
+        "syndrome": "syn_paralysie"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_paralysie"
+      },
+      {
+        "signe": "sig_otalgie",
+        "syndrome": "syn_orl_douloureux"
+      },
+      {
+        "signe": "sig_angine",
+        "syndrome": "syn_orl_douloureux"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_orl_douloureux"
+      },
+      {
+        "signe": "sig_refus_teter",
+        "syndrome": "syn_souffrance_neonatale"
+      },
+      {
+        "signe": "sig_troubles_conscience",
+        "syndrome": "syn_souffrance_neonatale"
+      },
+      {
+        "signe": "sig_dyspnee",
+        "syndrome": "syn_souffrance_neonatale"
+      },
+      {
+        "signe": "sig_hypothermie",
+        "syndrome": "syn_souffrance_neonatale"
+      },
+      {
+        "signe": "sig_tumefaction_parotide",
+        "syndrome": "syn_parotidien"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_parotidien"
+      },
+      {
+        "signe": "sig_eruption",
+        "syndrome": "syn_dermatose_localisee"
+      },
+      {
+        "signe": "sig_croutes",
+        "syndrome": "syn_dermatose_localisee"
+      },
+      {
+        "signe": "sig_prurit",
+        "syndrome": "syn_dermatose_localisee"
+      },
+      {
+        "signe": "sig_dysphonie",
+        "syndrome": "syn_larynge"
+      },
+      {
+        "signe": "sig_stridor",
+        "syndrome": "syn_larynge"
+      },
+      {
+        "signe": "sig_toux",
+        "syndrome": "syn_larynge"
+      },
+      {
+        "signe": "sig_dyspnee",
+        "syndrome": "syn_larynge"
+      }
+    ],
+    "syndrome_pathologie": [
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_paludisme"
+      },
+      {
+        "syndrome": "syn_anemique",
+        "pathologie": "pat_paludisme"
+      },
+      {
+        "syndrome": "syn_ictere",
+        "pathologie": "pat_paludisme"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_paludisme"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_paludisme"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_typhoide"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_typhoide"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_typhoide"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_dengue"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_dengue"
+      },
+      {
+        "syndrome": "syn_hemorragique",
+        "pathologie": "pat_dengue"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_meningite"
+      },
+      {
+        "syndrome": "syn_meninge",
+        "pathologie": "pat_meningite"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_meningite"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_fievre_jaune"
+      },
+      {
+        "syndrome": "syn_ictere",
+        "pathologie": "pat_fievre_jaune"
+      },
+      {
+        "syndrome": "syn_hemorragique",
+        "pathologie": "pat_fievre_jaune"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_chikungunya"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_chikungunya"
+      },
+      {
+        "syndrome": "syn_respiratoire_chronique",
+        "pathologie": "pat_tuberculose"
+      },
+      {
+        "syndrome": "syn_aeg",
+        "pathologie": "pat_tuberculose"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_tuberculose"
+      },
+      {
+        "syndrome": "syn_immunodepression",
+        "pathologie": "pat_vih"
+      },
+      {
+        "syndrome": "syn_aeg",
+        "pathologie": "pat_vih"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_vih"
+      },
+      {
+        "syndrome": "syn_ictere",
+        "pathologie": "pat_hepatite_b"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_hepatite_b"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_hepatite_b"
+      },
+      {
+        "syndrome": "syn_deshydratation",
+        "pathologie": "pat_cholera"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_cholera"
+      },
+      {
+        "syndrome": "syn_eruptif_febrile",
+        "pathologie": "pat_rougeole"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_rougeole"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_rougeole"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_rougeole"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_rougeole"
+      },
+      {
+        "syndrome": "syn_cutane_ulcereux",
+        "pathologie": "pat_buruli"
+      },
+      {
+        "syndrome": "syn_urinaire",
+        "pathologie": "pat_schistosomiase"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_schistosomiase"
+      },
+      {
+        "syndrome": "syn_prurigineux",
+        "pathologie": "pat_onchocercose"
+      },
+      {
+        "syndrome": "syn_oculaire",
+        "pathologie": "pat_onchocercose"
+      },
+      {
+        "syndrome": "syn_lymphatique",
+        "pathologie": "pat_filariose"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_filariose"
+      },
+      {
+        "syndrome": "syn_cutaneo_nerveux",
+        "pathologie": "pat_lepre"
+      },
+      {
+        "syndrome": "syn_neuro_comportemental",
+        "pathologie": "pat_tha"
+      },
+      {
+        "syndrome": "syn_aeg",
+        "pathologie": "pat_tha"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_tha"
+      },
+      {
+        "syndrome": "syn_lymphatique",
+        "pathologie": "pat_tha"
+      },
+      {
+        "syndrome": "syn_neuro_comportemental",
+        "pathologie": "pat_rage"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_rage"
+      },
+      {
+        "syndrome": "syn_spasmes",
+        "pathologie": "pat_tetanos"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_amibiase"
+      },
+      {
+        "syndrome": "syn_deshydratation",
+        "pathologie": "pat_amibiase"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_covid19"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_covid19"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_covid19"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_grippe"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_grippe"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_grippe"
+      },
+      {
+        "syndrome": "syn_prurigineux",
+        "pathologie": "pat_gale"
+      },
+      {
+        "syndrome": "syn_cutane_ulcereux",
+        "pathologie": "pat_pian"
+      },
+      {
+        "syndrome": "syn_oculaire",
+        "pathologie": "pat_trachome"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_geohelminthiases"
+      },
+      {
+        "syndrome": "syn_anemique",
+        "pathologie": "pat_geohelminthiases"
+      },
+      {
+        "syndrome": "syn_prurigineux",
+        "pathologie": "pat_loase"
+      },
+      {
+        "syndrome": "syn_oculaire",
+        "pathologie": "pat_loase"
+      },
+      {
+        "syndrome": "syn_respiratoire_chronique",
+        "pathologie": "pat_coqueluche"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_coqueluche"
+      },
+      {
+        "syndrome": "syn_ist",
+        "pathologie": "pat_syphilis"
+      },
+      {
+        "syndrome": "syn_eruptif_febrile",
+        "pathologie": "pat_syphilis"
+      },
+      {
+        "syndrome": "syn_ist",
+        "pathologie": "pat_gonococcie"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_lassa"
+      },
+      {
+        "syndrome": "syn_hemorragique",
+        "pathologie": "pat_lassa"
+      },
+      {
+        "syndrome": "syn_eruptif_febrile",
+        "pathologie": "pat_mpox"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_mpox"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_leptospirose"
+      },
+      {
+        "syndrome": "syn_ictere",
+        "pathologie": "pat_leptospirose"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_leptospirose"
+      },
+      {
+        "syndrome": "syn_malnutrition",
+        "pathologie": "pat_malnutrition"
+      },
+      {
+        "syndrome": "syn_anemique",
+        "pathologie": "pat_malnutrition"
+      },
+      {
+        "syndrome": "syn_deshydratation",
+        "pathologie": "pat_gastro_enterite"
+      },
+      {
+        "syndrome": "syn_digestif",
+        "pathologie": "pat_gastro_enterite"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_pneumonie"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_pneumonie"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_bronchiolite"
+      },
+      {
+        "syndrome": "syn_orl_douloureux",
+        "pathologie": "pat_otite"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_otite"
+      },
+      {
+        "syndrome": "syn_souffrance_neonatale",
+        "pathologie": "pat_sepsis_neonatal"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_sepsis_neonatal"
+      },
+      {
+        "syndrome": "syn_ictere",
+        "pathologie": "pat_ictere_neonatal"
+      },
+      {
+        "syndrome": "syn_anemique",
+        "pathologie": "pat_drepanocytose"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_drepanocytose"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_drepanocytose"
+      },
+      {
+        "syndrome": "syn_paralysie",
+        "pathologie": "pat_poliomyelite"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_poliomyelite"
+      },
+      {
+        "syndrome": "syn_anemique",
+        "pathologie": "pat_anemie_enfant"
+      },
+      {
+        "syndrome": "syn_souffrance_neonatale",
+        "pathologie": "pat_prematurite"
+      },
+      {
+        "syndrome": "syn_souffrance_neonatale",
+        "pathologie": "pat_asphyxie_neonatale"
+      },
+      {
+        "syndrome": "syn_spasmes",
+        "pathologie": "pat_tetanos_neonatal"
+      },
+      {
+        "syndrome": "syn_souffrance_neonatale",
+        "pathologie": "pat_tetanos_neonatal"
+      },
+      {
+        "syndrome": "syn_neuro_febrile",
+        "pathologie": "pat_convulsions_febriles"
+      },
+      {
+        "syndrome": "syn_algique",
+        "pathologie": "pat_raa"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_raa"
+      },
+      {
+        "syndrome": "syn_orl_douloureux",
+        "pathologie": "pat_diphterie"
+      },
+      {
+        "syndrome": "syn_respiratoire_aigu",
+        "pathologie": "pat_diphterie"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_diphterie"
+      },
+      {
+        "syndrome": "syn_eruptif_febrile",
+        "pathologie": "pat_varicelle"
+      },
+      {
+        "syndrome": "syn_prurigineux",
+        "pathologie": "pat_varicelle"
+      },
+      {
+        "syndrome": "syn_parotidien",
+        "pathologie": "pat_oreillons"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_oreillons"
+      },
+      {
+        "syndrome": "syn_dermatose_localisee",
+        "pathologie": "pat_teigne"
+      },
+      {
+        "syndrome": "syn_dermatose_localisee",
+        "pathologie": "pat_impetigo"
+      },
+      {
+        "syndrome": "syn_larynge",
+        "pathologie": "pat_laryngite"
+      },
+      {
+        "syndrome": "syn_febrile",
+        "pathologie": "pat_laryngite"
+      }
+    ],
+    "pathologie_specialite": [
+      {
+        "pathologie": "pat_paludisme",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_paludisme",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_typhoide",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_typhoide",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_dengue",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_meningite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_meningite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_fievre_jaune",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_chikungunya",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tuberculose",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tuberculose",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_vih",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_vih",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_hepatite_b",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_cholera",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_cholera",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_rougeole",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_rougeole",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_buruli",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_schistosomiase",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_onchocercose",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_filariose",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_lepre",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tha",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_rage",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tetanos",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tetanos",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_amibiase",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_covid19",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_grippe",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_gale",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_pian",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_trachome",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_geohelminthiases",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_geohelminthiases",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_loase",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_coqueluche",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_coqueluche",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_syphilis",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_gonococcie",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_lassa",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_mpox",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_leptospirose",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_malnutrition",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_gastro_enterite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_gastro_enterite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_pneumonie",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_pneumonie",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_bronchiolite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_bronchiolite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_otite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_otite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_sepsis_neonatal",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_sepsis_neonatal",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_ictere_neonatal",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_drepanocytose",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_poliomyelite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_poliomyelite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_anemie_enfant",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_prematurite",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_asphyxie_neonatale",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_tetanos_neonatal",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_tetanos_neonatal",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_convulsions_febriles",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_raa",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_diphterie",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_diphterie",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_varicelle",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_varicelle",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_oreillons",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_oreillons",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_teigne",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_teigne",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_impetigo",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_impetigo",
+        "specialite": "spe_pediatrie"
+      },
+      {
+        "pathologie": "pat_laryngite",
+        "specialite": "spe_infectiologie"
+      },
+      {
+        "pathologie": "pat_laryngite",
+        "specialite": "spe_pediatrie"
+      }
+    ]
+  }
+}

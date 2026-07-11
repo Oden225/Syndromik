@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E5C63">
+<meta name="description" content="Référence médicale hors ligne : signes, syndromes, pathologies et spécialités (Côte d'Ivoire / Afrique subsaharienne).">
+<title>Syndromik</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/png" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<div class="phone">
+  <div class="topbar" id="topbar">
+    <button class="back" id="backbtn" aria-label="Retour">‹</button>
+    <div class="wordmark" id="wordmark">Syndro<span>mik</span></div>
+    <div class="ttl" id="title" style="display:none"></div>
+  </div>
+  <div class="screen" id="app"></div>
+</div>
+
+<div class="overlay" id="disc">
+  <div class="sheet">
+    <div class="warn">!</div>
+    <h2>Avant d'utiliser Syndromik</h2>
+    <p>Cette application est une <strong>aide au raisonnement clinique</strong>, pas une source de prescription.</p>
+    <p>Le contenu doit être <strong>validé contre les protocoles nationaux ivoiriens</strong> avant tout usage réel.</p>
+    <button class="btn" id="discok">J'ai compris</button>
+  </div>
+</div>
+
+<!-- Ordre imposé : données → rendu → routeur (qui amorce l'app) -->
+<script src="./js/dataStore.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/router.js"></script>
+
+<!-- Service worker : met tout en cache au 1er passage en ligne, puis 100% hors ligne -->
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>
