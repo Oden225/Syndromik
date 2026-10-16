@@ -123,6 +123,11 @@
   .row .body{flex:1;min-width:0;}
   .row .rn{font-weight:600;font-size:15.5px;}
   .row .rmeta{display:flex;align-items:center;gap:8px;margin-top:3px;flex-wrap:wrap;}
+  .avbadge{font-size:10px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;
+    color:#7A4A00;background:#FCEFD2;border:1px solid #F0D49A;padding:1px 7px;border-radius:20px;margin-left:auto;white-space:nowrap;flex:0 0 auto;}
+  .rmeta .avbadge{margin-left:0;}
+  .avnote{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:0 0 12px;}
+  .avnote .avbadge{margin-left:0;}
   .minichip{font-size:10.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);}
   .row .chev{color:#b7c4c3;font-size:20px;flex:0 0 auto;}
   .sig .tick{background:#6B7F9E}.syn .tick{background:#7A5EA6}

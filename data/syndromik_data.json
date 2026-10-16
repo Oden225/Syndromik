@@ -1,11 +1,12 @@
 {
   "meta": {
-    "version": "0.6",
+    "version": "0.7",
     "projet": "Syndromik",
     "contexte": "Côte d'Ivoire / Afrique subsaharienne",
     "noyau": "Infectiologie + Pédiatrie (approfondie)",
     "note": "Infectiologie étendue : noyau fébrile + grandes endémies et maladies tropicales négligées.",
-    "convention_id": "prefixe_ + nom sans accent ni espace (sig_, syn_, pat_, spe_)"
+    "convention_id": "prefixe_ + nom sans accent ni espace (sig_, syn_, pat_, spe_)",
+    "a_valider": "Les signes et liens portant \"a_valider\": true sont des propositions non relues (ajout v0.7). Retirer le champ une fois validés par un médecin, ou supprimer l'élément."
   },
   "signes": [
     {
@@ -521,6 +522,129 @@
         "bruit respiratoire aigu"
       ],
       "description": "Bruit rauque à la respiration, signe d'un rétrécissement des voies aériennes hautes."
+    },
+    {
+      "id": "sig_diarrhee_sanglante",
+      "nom": "Diarrhée sanglante",
+      "synonymes": [
+        "dysenterie",
+        "selles avec du sang",
+        "glaires et sang"
+      ],
+      "description": "Selles liquides contenant du sang, souvent avec glaires et douleurs abdominales. Évoque une infection invasive (amibiase, shigellose).",
+      "a_valider": true
+    },
+    {
+      "id": "sig_constipation",
+      "nom": "Constipation",
+      "synonymes": [
+        "selles rares",
+        "ventre bloqué"
+      ],
+      "description": "Émission de selles rares ou difficiles. Peut accompagner une fièvre prolongée (fièvre typhoïde au début).",
+      "a_valider": true
+    },
+    {
+      "id": "sig_fontanelle_bombee",
+      "nom": "Fontanelle bombée",
+      "synonymes": [
+        "fontanelle tendue",
+        "fontanelle gonflée"
+      ],
+      "description": "Fontanelle antérieure tendue et saillante chez le nourrisson. Signe d'hypertension intracrânienne, évocateur de méningite.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_choc",
+      "nom": "État de choc",
+      "synonymes": [
+        "collapsus",
+        "extrémités froides",
+        "pouls filant",
+        "hypotension"
+      ],
+      "description": "Défaillance circulatoire : extrémités froides, pouls faible et rapide, temps de recoloration allongé, tension basse. Urgence vitale.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_petechies",
+      "nom": "Pétéchies",
+      "synonymes": [
+        "purpura",
+        "petites taches rouges"
+      ],
+      "description": "Petites taches rouges ou violacées qui ne s'effacent pas à la pression. Traduisent un saignement sous la peau.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_urines_foncees",
+      "nom": "Urines foncées",
+      "synonymes": [
+        "urines couleur coca",
+        "urines brunes"
+      ],
+      "description": "Urines de couleur foncée (thé, coca). Accompagnent souvent un ictère d'origine hépatique ou une hémolyse.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_selles_decolorees",
+      "nom": "Selles décolorées",
+      "synonymes": [
+        "selles blanches",
+        "selles mastic"
+      ],
+      "description": "Selles pâles ou blanchâtres, signe d'un défaut d'écoulement de la bile.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_douleur_hcd",
+      "nom": "Douleur de l'hypochondre droit",
+      "synonymes": [
+        "douleur du foie",
+        "douleur sous les côtes à droite"
+      ],
+      "description": "Douleur sous les côtes à droite, en regard du foie. Évoque une atteinte hépatique ou biliaire (hépatite, abcès amibien).",
+      "a_valider": true
+    },
+    {
+      "id": "sig_tachycardie",
+      "nom": "Tachycardie",
+      "synonymes": [
+        "cœur rapide",
+        "palpitations"
+      ],
+      "description": "Fréquence cardiaque élevée pour l'âge. Peut traduire une fièvre, une anémie, une déshydratation ou un choc.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_douleur_retro_orbitaire",
+      "nom": "Douleur rétro-orbitaire",
+      "synonymes": [
+        "douleur derrière les yeux",
+        "mal derrière les yeux"
+      ],
+      "description": "Douleur ressentie derrière les yeux, augmentée par les mouvements oculaires. Évocatrice de la dengue.",
+      "a_valider": true
+    },
+    {
+      "id": "sig_gonflement_articulaire",
+      "nom": "Gonflement articulaire",
+      "synonymes": [
+        "arthrite",
+        "articulation enflée"
+      ],
+      "description": "Articulation gonflée, parfois chaude et douloureuse. Évoque une arthrite (chikungunya, RAA, drépanocytose).",
+      "a_valider": true
+    },
+    {
+      "id": "sig_pollakiurie",
+      "nom": "Envies fréquentes d'uriner",
+      "synonymes": [
+        "pollakiurie",
+        "uriner souvent"
+      ],
+      "description": "Besoin d'uriner fréquemment, en petites quantités. Signe d'irritation des voies urinaires.",
+      "a_valider": true
     }
   ],
   "syndromes": [
@@ -1672,6 +1796,121 @@
       {
         "signe": "sig_dyspnee",
         "syndrome": "syn_larynge"
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_digestif",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_diarrhee_sanglante",
+        "syndrome": "syn_digestif",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_constipation",
+        "syndrome": "syn_digestif",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_raideur_nuque",
+        "syndrome": "syn_neuro_febrile",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_cephalees",
+        "syndrome": "syn_neuro_febrile",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_fontanelle_bombee",
+        "syndrome": "syn_neuro_febrile",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_hemorragique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_ictere",
+        "syndrome": "syn_hemorragique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_choc",
+        "syndrome": "syn_hemorragique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_petechies",
+        "syndrome": "syn_hemorragique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_ictere",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_urines_foncees",
+        "syndrome": "syn_ictere",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_selles_decolorees",
+        "syndrome": "syn_ictere",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_douleur_hcd",
+        "syndrome": "syn_ictere",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_dyspnee",
+        "syndrome": "syn_anemique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_tachycardie",
+        "syndrome": "syn_anemique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_ictere",
+        "syndrome": "syn_anemique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_fievre",
+        "syndrome": "syn_algique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_douleur_retro_orbitaire",
+        "syndrome": "syn_algique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_gonflement_articulaire",
+        "syndrome": "syn_algique",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_brulures_miction",
+        "syndrome": "syn_urinaire",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_pollakiurie",
+        "syndrome": "syn_urinaire",
+        "a_valider": true
+      },
+      {
+        "signe": "sig_conjonctivite",
+        "syndrome": "syn_oculaire",
+        "a_valider": true
       }
     ],
     "syndrome_pathologie": [

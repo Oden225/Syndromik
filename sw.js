@@ -8,7 +8,7 @@
  * modif du HTML/CSS/JS), incrémenter CACHE_VERSION pour forcer le rafraîchissement.
  */
 
-const CACHE_VERSION = "syndromik-v0.6.0";
+const CACHE_VERSION = "syndromik-v0.7.0";
 
 // Chemins RELATIFS (./) : indispensable pour GitHub Pages servi sous un sous-dossier
 // (https://<user>.github.io/<repo>/). Ne pas mettre de "/" absolu.

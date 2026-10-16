@@ -12,15 +12,18 @@ Cocher au fur et à mesure (`[x]`).
 ## 2. Enrichir la base (priorité contenu)
 Objectif : 5 à 8 signes par syndrome sur le noyau fébrile + pédiatrique,
 pour que « Combiner des signes » discrimine vraiment.
-Aujourd'hui : 2 à 5 signes par syndrome, 42 signes sur 59 ne mènent qu'à un seul syndrome.
+Avant v0.7 : 2 à 5 signes par syndrome, 42 signes sur 59 ne mènent qu'à un seul syndrome.
+
+v0.7 : 12 signes et 23 liens **proposés** (`"a_valider": true`, badge « À valider » dans l'app),
+sur les syndromes cochés ci-dessous. Restent à relire avant de compter comme validés.
 
 **Priorité haute** — peu de signes, beaucoup de pathologies ou des urgences derrière :
-- [ ] Syndrome digestif fébrile (3 signes → 9 pathologies)
-- [ ] Syndrome neurologique fébrile (3 → 6, dont méningite, neuropaludisme, rage)
-- [ ] Syndrome hémorragique (2 → 3 : dengue, fièvre jaune, Lassa)
-- [ ] Syndrome ictérique (2 → 5)
-- [ ] Syndrome anémique (3 → 5)
-- [ ] Syndrome algique diffus (3 → 7)
+- [x] Syndrome digestif fébrile (3 signes → 9 pathologies)
+- [x] Syndrome neurologique fébrile (3 → 6, dont méningite, neuropaludisme, rage)
+- [x] Syndrome hémorragique (2 → 3 : dengue, fièvre jaune, Lassa)
+- [x] Syndrome ictérique (2 → 5)
+- [x] Syndrome anémique (3 → 5)
+- [x] Syndrome algique diffus (3 → 7)
 - [ ] Syndrome fébrile (5 signes mais 27 pathologies : très peu discriminant)
 
 **Priorité moyenne** — 2 signes seulement :
@@ -29,8 +32,8 @@ Aujourd'hui : 2 à 5 signes par syndrome, 42 signes sur 59 ne mènent qu'à un s
 - [ ] ORL douloureux, IST, immunodépression, dermatose localisée, spasmes musculaires
 
 **Cohérence à vérifier** (avec le relecteur) :
-- [ ] Syndrome urinaire = « Hématurie + Douleur abdominale » seulement
-- [ ] Syndrome oculaire contient « Prurit » mais pas « Œil rouge »
+- [x] Syndrome urinaire : ajout proposé de « Brûlures mictionnelles » et « Envies fréquentes d'uriner »
+- [x] Syndrome oculaire : ajout proposé de « Œil rouge » (garder « Prurit » ?)
 - [ ] Syndrome éruptif fébrile mène à la syphilis
 - [ ] Paludisme classé `elevee` alors que sa forme grave est vitale
 

@@ -1,7 +1,7 @@
 # Syndromik — squelette de l'app (étape 5)
 
 PWA hors ligne (HTML/CSS/JS pur, sans build) issue du découpage de la maquette validée
-à l'étape 4, branchée sur la vraie base `syndromik_data.json` v0.6.
+à l'étape 4, branchée sur la vraie base `syndromik_data.json` (v0.7).
 
 ## Arborescence
 ```
@@ -12,7 +12,7 @@ sw.js                    service worker : cache offline « cache-first »
 /js/dataStore.js         charge le JSON, normalise, index + voisinage + recherche + analyser
 /js/ui.js                rendu des écrans et des listes de voisins
 /js/router.js            routage par ancre (#/…) + disclaimer + amorçage
-/data/syndromik_data.json  la base (v0.6) — 59 signes, 30 syndromes, 54 pathologies, 2 spécialités
+/data/syndromik_data.json  la base (v0.7) — 71 signes, 30 syndromes, 54 pathologies, 2 spécialités
 /icons/icon-192.png, icon-512.png  icônes PWA (provisoires, à remplacer par le vrai logo)
 ```
 
@@ -40,3 +40,6 @@ Remplacer `/data/syndromik_data.json`, puis **incrémenter `CACHE_VERSION`** dan
 - L'`urgence` reste dans les données mais n'est pas affichée (décision étape 4).
 - Les icônes sont des placeholders (monogramme S) — à remplacer par le logo définitif.
 - Disclaimer affiché au 1er lancement, acceptation mémorisée (`localStorage`).
+- Contenu non relu : les signes et liens marqués `"a_valider": true` dans le JSON sont des
+  propositions (v0.7) affichées avec un badge « À valider ». Une fois relus par un médecin,
+  retirer le champ (ou supprimer l'élément), puis incrémenter `CACHE_VERSION`.
