@@ -41,7 +41,7 @@ Après chaque modification de la base : incrémenter `CACHE_VERSION` dans `sw.js
 
 ## 3. Validation médicale (bloquant avant tout usage réel)
 - [ ] Trouver 1–2 relecteurs (médecin, interne en infectiologie / pédiatrie)
-- [ ] Générer une version tableur de la base pour la relecture
+- [x] Générer une version tableur de la base pour la relecture (`relecture/`, régénérable avec `python3 relecture/generer_tableur.py`)
 - [ ] Intégrer les corrections, noter la date de validation dans `meta` du JSON
 
 ## 4. Application
