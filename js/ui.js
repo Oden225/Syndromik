@@ -30,18 +30,22 @@ function setBar(mode, text) {
   else { topbar.classList.add("has-back"); wordmark.style.display = "none"; titleEl.style.display = ""; titleEl.textContent = text; }
 }
 
-function rowHTML(e) {
+function rowHTML(e, fromId) {
   const t = store.type(e.id), m = TYPE_META[t];
-  const meta = `<span class="minichip">${m.label}</span>`;
+  const av = e.aValider || (fromId && store.lienAValider(fromId, e.id));
+  const meta = `<span class="minichip">${m.label}</span>` + (av ? AV_BADGE : "");
   return `<button class="row ${m.cls}" onclick="go('${t}/${e.id}')">
     <span class="tick"></span>
     <span class="body"><span class="rn">${esc(e.nom)}</span><span class="rmeta">${meta}</span></span>
     <span class="chev">›</span>
   </button>`;
 }
-function rows(list) {
+/* Contenu ajouté en attente de relecture médicale (champ "a_valider" du JSON). */
+const AV_BADGE = `<span class="avbadge">À valider</span>`;
+
+function rows(list, fromId) {
   if (!list.length) return `<div class="empty">Aucun élément lié pour l'instant.</div>`;
-  return `<div class="rowlist">${list.map(rowHTML).join("")}</div>`;
+  return `<div class="rowlist">${list.map(e => rowHTML(e, fromId)).join("")}</div>`;
 }
 function chain(active) {
   const order = [["signe", "Signe"], ["syndrome", "Syndrome"], ["pathologie", "Pathologie"], ["specialite", "Spécialité"]];
@@ -109,7 +113,7 @@ function renderCombiner() {
     listEl.innerHTML = signes.filter(s => !f || norm(s.nom + " " + (s.syn || []).join(" ")).includes(f))
       .map(s => `<label class="chk ${combSel.has(s.id) ? "on" : ""}">
         <input type="checkbox" ${combSel.has(s.id) ? "checked" : ""} onchange="toggleSigne('${s.id}',this.checked)">
-        <span>${esc(s.nom)}</span></label>`).join("")
+        <span>${esc(s.nom)}</span>${s.aValider ? AV_BADGE : ""}</label>`).join("")
       || `<div class="empty">Aucun signe ne correspond au filtre.</div>`;
   }
   function syncControls() {
@@ -162,20 +166,21 @@ function renderFiche(t, id) {
   html += `<div class="head"><span class="chip"><span class="d" style="color:${
     t === 'signe' ? '#6B7F9E' : t === 'syndrome' ? '#7A5EA6' : t === 'pathologie' ? '#B0603A' : 'var(--brand)'}"></span>${m.label}</span></div>`;
   html += `<h1 class="name">${esc(e.nom)}</h1>`;
+  if (e.aValider) html += `<p class="avnote">${AV_BADGE} Ajout proposé, pas encore relu par un médecin.</p>`;
   if (e.syn && e.syn.length) html += `<p class="synos">Aussi : ${e.syn.map(esc).join(", ")}</p>`;
 
   html += `<div class="desc">${esc(e.desc)}</div>`;
 
   if (t === "signe") {
-    html += `<div class="eyebrow">Présent dans ces syndromes</div>` + rows(store.voisins(id, "syndrome"));
+    html += `<div class="eyebrow">Présent dans ces syndromes</div>` + rows(store.voisins(id, "syndrome"), id);
   } else if (t === "syndrome") {
-    html += `<div class="eyebrow">Signes qui le composent</div>` + rows(store.voisins(id, "signe"));
-    html += `<div class="eyebrow">Pathologies probables</div>` + rows(store.voisins(id, "pathologie"));
+    html += `<div class="eyebrow">Signes qui le composent</div>` + rows(store.voisins(id, "signe"), id);
+    html += `<div class="eyebrow">Pathologies probables</div>` + rows(store.voisins(id, "pathologie"), id);
   } else if (t === "pathologie") {
-    html += `<div class="eyebrow">Syndromes associés</div>` + rows(store.voisins(id, "syndrome"));
-    html += `<div class="eyebrow">Spécialité(s)</div>` + rows(store.voisins(id, "specialite"));
+    html += `<div class="eyebrow">Syndromes associés</div>` + rows(store.voisins(id, "syndrome"), id);
+    html += `<div class="eyebrow">Spécialité(s)</div>` + rows(store.voisins(id, "specialite"), id);
   } else if (t === "specialite") {
-    html += `<div class="eyebrow">Pathologies de la spécialité</div>` + rows(store.voisins(id, "pathologie"));
+    html += `<div class="eyebrow">Pathologies de la spécialité</div>` + rows(store.voisins(id, "pathologie"), id);
   }
   app.innerHTML = html;
   app.scrollTop = 0;

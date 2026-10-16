@@ -19,6 +19,7 @@ function _normEntite(e) {
     desc: e.description || e.desc || ""
   };
   if (e.urgence) o.urgence = e.urgence; // conservé dans les données (non affiché — étape 4)
+  if (e.a_valider) o.aValider = true;   // proposition non relue par un médecin
   return o;
 }
 
@@ -37,14 +38,16 @@ function _buildStore(raw) {
 
   // Voisinage bidirectionnel à partir des tables de liens (objets typés).
   const adj = {};
-  const link = (a, b) => {
+  const pending = new Set(); // liens "a_valider", clé "a|b" dans les deux sens
+  const link = (a, b, aValider) => {
     (adj[a] = adj[a] || new Set()).add(b);
     (adj[b] = adj[b] || new Set()).add(a);
+    if (aValider) { pending.add(a + "|" + b); pending.add(b + "|" + a); }
   };
   const L = raw.liens || {};
-  (L.signe_syndrome || []).forEach(x => link(x.signe, x.syndrome));
-  (L.syndrome_pathologie || []).forEach(x => link(x.syndrome, x.pathologie));
-  (L.pathologie_specialite || []).forEach(x => link(x.pathologie, x.specialite));
+  (L.signe_syndrome || []).forEach(x => link(x.signe, x.syndrome, x.a_valider));
+  (L.syndrome_pathologie || []).forEach(x => link(x.syndrome, x.pathologie, x.a_valider));
+  (L.pathologie_specialite || []).forEach(x => link(x.pathologie, x.specialite, x.a_valider));
 
   const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const all = () => Object.values(byId);
@@ -55,6 +58,7 @@ function _buildStore(raw) {
     get: id => byId[id],
     type: id => typeOf[id],
     voisins,
+    lienAValider: (a, b) => pending.has(a + "|" + b),
     list: t => all().filter(e => typeOf[e.id] === t),
     rechercher: q => {
       const n = norm((q || "").trim());
